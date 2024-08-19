@@ -1,10 +1,10 @@
-import useStore from "../lib/store";
+import Navbar from "../../components/Navbar";
 
 export default function Home() {
-    const { isMobile } = useStore();
-
-    if (isMobile) {
-        return <h1>Mobile</h1>;
-    }
-    return <h1>Laptop</h1>;
+    return (
+        <>
+            <Navbar />
+        </>
+    );
 }
+2;
