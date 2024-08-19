@@ -1,26 +1,38 @@
 {
-  "name": "mintlify-clone",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
-  }
+    "name": "mintlify-clone",
+    "version": "0.1.0",
+    "private": true,
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "next": "14.2.5",
+        "react": "^18",
+        "react-dom": "^18",
+        "zustand": "^4.5.5"
+    },
+    "type": "module",
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "eslint": "^8.57.0",
+        "eslint-config-next": "14.2.5",
+        "husky": "^9.1.4",
+        "lint-staged": "^15.2.9",
+        "postcss": "^8",
+        "prettier": "^3.1.0",
+        "prettier-eslint": "^16.1.2",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    }
 }
